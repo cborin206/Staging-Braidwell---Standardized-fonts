@@ -136,6 +136,22 @@ gtag('config', 'G-4G09EGBVZ3');</script>
     transform-origin: left center;
     width: 133.33%; /* 100% / 0.75 to compensate for scale */
   }
+  
+  /* Larger text on mobile */
+  @media screen and (max-width: 991px) {
+    .text-content-95 p,
+    .text-content-95 h1 {
+      transform: scale(0.9);
+      width: 111.11%; /* 100% / 0.9 to compensate for scale */
+    }
+  }
+  @media screen and (max-width: 640px) {
+    .text-content-95 p,
+    .text-content-95 h1 {
+      transform: scale(1);
+      width: 100%;
+    }
+  }
 </style>
 <section class="section w-full h-full relative">
                   <div class="content flex justify-center items-center w-full">
