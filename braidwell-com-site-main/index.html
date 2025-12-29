@@ -186,7 +186,7 @@ gtag('config', 'G-4G09EGBVZ3');</script>
                                           </div>
                                           <div class="co-founder-info">
                                                 <h3>Alex Karnal</h3>
-                                                <p>Chief Investment Officer, Partner, Co-Founder</p>
+                                                <p>Chief Investment Officer,<br class="mobile-break"> Partner, Co-Founder</p>
                                           </div>
                                     </div>
                                     <div class="co-founder" onclick="openBioModal('brian')">
@@ -195,7 +195,7 @@ gtag('config', 'G-4G09EGBVZ3');</script>
                                           </div>
                                           <div class="co-founder-info">
                                                 <h3>Brian Kreiter</h3>
-                                                <p>Chief Executive Officer, Partner, Co-Founder</p>
+                                                <p>Chief Executive Officer,<br class="mobile-break"> Partner, Co-Founder</p>
                                           </div>
                                     </div>
                               </div>
@@ -314,6 +314,11 @@ gtag('config', 'G-4G09EGBVZ3');</script>
     font-weight: 300;
     line-height: 1.4;
     font-family: 'FoundersGrotesk', sans-serif;
+  }
+  
+  /* Hide mobile line break on desktop */
+  .mobile-break {
+    display: none;
   }
   
   /* Bio Modal Styles */
@@ -487,6 +492,9 @@ gtag('config', 'G-4G09EGBVZ3');</script>
   @media screen and (max-width: 991px) {
     .section {
       overflow: hidden;
+    }
+    .mobile-break {
+      display: block;
     }
     .co-founders-wrapper {
       padding: 0 2.5rem;
