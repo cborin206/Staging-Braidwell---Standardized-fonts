@@ -93,6 +93,10 @@ var setRoundedLogoBottomPosition = function setRoundedLogoBottomPosition() {
   });
 };
 
+var initNavigationHover = function initNavigationHover() {
+  // No hover animation
+};
+
 var init = function init() {
   initFullpage();
   setRoundedLogoBottomPosition();
